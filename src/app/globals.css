@@ -2,8 +2,20 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+  scroll-behavior: smooth;
+}
+
+code {
+  /* highlight with orange background and round background*/
+  background-color: #ebdbbc;
+  border-radius: 0.25rem;
+  padding: 0.125rem;
+  font-size: 0.875rem;
+}
+
 :root {
-  --background: #ffffff;
+  --background: #FAF7EF;
   --foreground: #171717;
 }
 
@@ -16,7 +28,7 @@ body {
 /* Elements marked with serif class or font-serif will use Source Serif */
 .font-serif,
 .serif {
-  font-family: ui-serif, var(--font-pt-serif), var(--font-noto-serif), Georgia,
+  font-family: var(--font-noto-serif),ui-serif, var(--font-pt-serif), Georgia,
     serif;
 }
 

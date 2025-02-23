@@ -6,13 +6,13 @@ export function NewsEntry({ news }: { news: News }) {
     <div className="flex flex-row gap-6">
       <div className="flex flex-col flex-1">
         <p className="text-xs text-zinc-500 mb-2">{news.date}</p>
-        <h3 className="font-serif text-md mb-3">
+        <h3 className="font-serif text-md mb-3 ">
           {news.link ? (
             <a
               href={news.link}
               target="_blank"
               rel="noopener noreferrer"
-              className="group inline-flex items-center gap-2 hover:text-zinc-600 transition-colors duration-300"
+              className="group inline-flex items-center gap-2 hover:text-orange-600 transition-colors duration-300"
             >
               {news.title}
               <ArrowUpRight

@@ -40,7 +40,8 @@ export function PublicationEntry({
           {publication.paperUrl && (
             <a
               href={publication.paperUrl}
-              className="group inline-flex items-center gap-2 text-xs text-zinc-500 hover:text-zinc-900 transition-colors duration-300"
+              className="group inline-flex items-center gap-2 text-xs text-zinc-500 hover:text-orange-600 transition-colors duration-300"
+              target="_blank"
             >
               <ArrowUpRight
                 size={12}
@@ -49,10 +50,25 @@ export function PublicationEntry({
               <span className="tracking-wider uppercase">Paper</span>
             </a>
           )}
+          {publication.websiteUrl && (
+            <a
+              href={publication.websiteUrl}
+              className="group inline-flex items-center gap-2 text-xs text-zinc-500 hover:text-orange-600 transition-colors duration-300"
+              target="_blank"
+            >
+              <ArrowUpRight
+                size={12}
+                className="group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform duration-300"
+              />
+              <span className="tracking-wider uppercase">Website</span>
+            </a>
+          )}
           {publication.codeUrl && (
             <a
               href={publication.codeUrl}
-              className="group inline-flex items-center gap-2 text-xs text-zinc-500 hover:text-zinc-900 transition-colors duration-300"
+              className="group inline-flex items-center gap-2 text-xs text-zinc-500 hover:text-orange-600 transition-colors duration-300"
+              target="_blank"
+
             >
               <ArrowUpRight
                 size={12}
@@ -61,10 +77,49 @@ export function PublicationEntry({
               <span className="tracking-wider uppercase">Code</span>
             </a>
           )}
+          {publication.videoUrl && (
+            <a
+              href={publication.videoUrl}
+              className="group inline-flex items-center gap-2 text-xs text-zinc-500 hover:text-orange-600 transition-colors duration-300"
+              target="_blank"
+            >
+              <ArrowUpRight
+                size={12}
+                className="group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform duration-300"
+              />
+              <span className="tracking-wider uppercase">Video</span>
+            </a>
+          )}
+          {publication.slidesUrl && (
+            <a
+              href={publication.slidesUrl}
+              className="group inline-flex items-center gap-2 text-xs text-zinc-500 hover:text-orange-600 transition-colors duration-300"
+              target="_blank"
+            >
+              <ArrowUpRight
+                size={12}
+                className="group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform duration-300"
+              />
+              <span className="tracking-wider uppercase">Slides</span>
+            </a>
+          )}
+          {publication.posterUrl && (
+            <a
+              href={publication.posterUrl}
+              className="group inline-flex items-center gap-2 text-xs text-zinc-500 hover:text-orange-600 transition-colors duration-300"
+              target="_blank"
+            >
+              <ArrowUpRight
+                size={12}
+                className="group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform duration-300"
+              />
+              <span className="tracking-wider uppercase">Poster</span>
+            </a>
+          )}
           {publication.bibtex && (
             <a
               href={publication.bibtex}
-              className="group inline-flex items-center gap-2 text-xs text-zinc-500 hover:text-zinc-900 transition-colors duration-300"
+              className="group inline-flex items-center gap-2 text-xs text-zinc-500 hover:text-orange-600 transition-colors duration-300"
             >
               <ArrowUpRight
                 size={12}
